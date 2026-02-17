@@ -46,16 +46,25 @@
       });
       */
 
-      setTimeout(function () {
-        console.log("timeout");
-        console.log("timeout2");
-      }, 3000);
+      //   setTimeout(function () {
+      //     console.log("timeout");
+      //     console.log("timeout2");
+      //   }, 3000);
 
-      console.log("next line");
+      //   console.log("next line");
 
       //   setInterval(function () {
       //     console.log("interval");
       //   }, 3000);
+
+      ["make dinner", "wash dishes", "watch youtube"].forEach(
+        function (value, index) {
+          if (value === "wash dishes") {
+            return;
+          }
+          console.log(value, index);
+        },
+      );
     </script>
   </body>
 </html>
